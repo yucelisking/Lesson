@@ -7,6 +7,13 @@
     <title>Portfolio Website</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--Header Menu-->
@@ -14,11 +21,11 @@
       <a href="" class="logo"><img src="img/logo.png" alt="" /></a>
 
       <ul class="navbar">
-        <li><a href="home">Home</a></li>
-        <li><a href="aboutme">About Me</a></li>
-        <li><a href="services">Services</a></li>
-        <li><a href="portfolio">My Portfolio</a></li>
-        <li><a href="contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">My Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </header>
 
@@ -26,37 +33,45 @@
     <section id="home" class="home">
       <div class="home-text">
         <h4>Hello</h4>
-        <h1>I`m Name Surname</h1>
-        <h3>Blockchain Developer</h3>
-        <a href="">Hire Me</a>
+        <h1>I`m Yücel ISBARAN</h1>
+        <!--<h3>Blockchain Developer</h3>-->
+        <a href="" class="btn">Hire Me</a>
       </div>
     </section>
 
     <!--About-->
     <section id="aboutme" class="aboutme">
       <div class="aboutme-img">
-        <img src="" alt="" />
+        <img src="img/about.png" alt="" />
       </div>
 
-      <div class="aboutme-tex">
+      <div class="aboutme-text">
         <h2>About Me</h2>
         <h4>Hi, Iam Here To Help You</h4>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
-          eveniet possimus minus, rerum tempore illo placeat voluptate
-          laboriosam doloremque provident eligendi tempora alias ratione dolore
-          facere pariatur blanditiis est culpa!
+          Hello, my name is Yücel. I'm a web developer with a keen interest in
+          blockchain technology. I have expertise in HTML, CSS, and JavaScript,
+          and I can build interactive and user-friendly web applications using
+          modern JavaScript libraries like React.js. I'm passionate and always
+          eager to learn, constantly striving to improve myself and adapt to new
+          technologies. My goal is to create creative and impactful projects
+          that add value to the digital world. With my interest in blockchain
+          technology, I aim to explore the potential of distributed ledger
+          technology and smart contracts, and to develop innovative solutions in
+          this field. I'm dedicated to continuous self-improvement in order to
+          develop inspiring projects and to discover the unique opportunities
+          offered by these technologies. I'm excited to present valuable
+          projects aligned with my interests
         </p>
       </div>
-
+      <!--
       <div class="aboutme-features">
         <h5>1.Problem Solving</h5>
         <h5>2.Creative Idea</h5>
         <h5>3.Search Lot</h5>
         <h5>4.High Quality</h5>
       </div>
-
-      <a href="">Contact Me</a>
+        -->
     </section>
 
     <!--Services-->
@@ -67,8 +82,8 @@
       </div>
       <div class="services-content">
         <div class="box">
-          <img src="" alt="" />
-          <h3>Mobile App Design</h3>
+          <img src="img/serv1.png" alt="" />
+          <h3>App Design</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi vitae
             aspernatur, atque delectus quasi nostrum animi unde dignissimos!
@@ -78,7 +93,7 @@
         </div>
 
         <div class="box">
-          <img src="" alt="" />
+          <img src="img/serv2.png" alt="" />
           <h3>Web Design</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi vitae
@@ -89,7 +104,7 @@
         </div>
 
         <div class="box">
-          <img src="" alt="" />
+          <img src="img/serv3.png" alt="" />
           <h3>Video Editing</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi vitae
@@ -117,7 +132,7 @@
           <div class="portfolio-box-icon">
             <!--icon-->
           </div>
-          <h3>Mobile app landing design...</h3>
+          <h3>This page is purely a sample study. It was created by Yücel ISBARAN. The photographs and information used are representative.</h3>
         </div>
         <div class="portfolio-box">
           <img src="" alt="" />
@@ -175,7 +190,7 @@
     </section>
 
     <!--ContactMe-->
-    <section id="contact">
+    <section id="contact" class="contact">
       <div class="contact-text">
         <h2>Contact Me</h2>
         <h6>Let`s Work Together</h6>
@@ -185,7 +200,7 @@
           <a href="">example@example.com</a>
           <a href="">+41414114141</a>
         </div>
-        <div class="contact-icons">
+         <div class="contact-icons">
           <a href="#"><!--icon--></a>
           <a href="#"><!--icon--></a>
           <a href="#"><!--icon--></a>
@@ -193,24 +208,21 @@
           <a href="#"><!--icon--></a>
         </div>
       </div>
-      <div>
-        <form action="">
-          <input type="text" placeholder="Enter Your Name" required />
-          <input type="email" placeholder="Enter Your Email" required />
-          <input type="text" placeholder="Enter Your Subject" />
-          <textarea
-            name=""
-            id=""
-            cols="40"
-            rows="10"
-            placeholder="Enter Your Message"
-          ></textarea>
-          <input type="submit" value="Submit" />
+      <div class="contact-form">
+        <form>
+            <input type="text" placeholder="Enter Your Name" required>
+            <p></p>
+            <input type="email" placeholder="Enter Your Email" required>
+            <p></p>
+            <input type="text" placeholder="Enter Your Subject">
+            <p></p>
+            <textarea name="" cols="20" rows="10" placeholder="Enter Your Message"></textarea>
+            <p></p>
+            <input type="submit" value="Submit">
         </form>
-      </div>
     </section>
     <div>
-      <p>Developed by @ 2022</p>
+      <p>Developed by <strong>Yücel ISBARAN</strong> 2023</p>
     </div>
   </body>
 </html>

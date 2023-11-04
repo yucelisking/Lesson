@@ -2,9 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
-  list-style: none;
+  font-family: "Quicksand", "sans-serif";
   text-decoration: none;
+  list-style-type: none;
 }
 
 :root {
@@ -16,6 +16,9 @@
   --h2-font: 3rem;
   --h3-font: 2rem;
   --h4-font: 1.5rem;
+  --h5-font: 1.4rem;
+  --p-font: 1rem;
+  --a-font: 1.2rem;
 }
 
 body {
@@ -32,9 +35,196 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 10%;
+  backdrop-filter: blur(5px);
 }
 
 .logo img {
-  width: 150px;
+  width: 170px;
   height: auto;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: var(--secondary-color);
+  font-size: var(--p-font);
+  padding: 10px 25px;
+  border-radius: 0.8rem;
+  transition: all 0.4s ease;
+}
+
+.navbar a:hover {
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+
+section {
+  padding: 200px 15% 90px;
+}
+
+.home {
+  width: 100%;
+  height: 110vh;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home-text h4 {
+  color: var(--primary-color);
+  font-size: var(--h4-font);
+  font-weight: 600;
+}
+
+.home-text h1 {
+  font-size: var(--h1-font);
+  font-weight: bold;
+  margin: 20px 0;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+.home-text span {
+  color: var(--primary-color);
+}
+
+.home-text h3 {
+  font-size: var(--h3-font);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  font-size: var(--a-font);
+  font-weight: 600;
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding: 15px 40px;
+  border-radius: 0.8rem;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: transparent;
+  opacity: 1;
+  border: 1px solid var(--primary-color);
+}
+
+header.sticky {
+  background: var(--bg-color);
+  border: 1px solid var(--bg-color);
+}
+
+.aboutme {
+  display: flex;
+  grid-template-columns: repeat(2.1fr);
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.aboutme h4 {
+  color: var(--primary-color);
+  font-size: var(--h4-font);
+  font-weight: 600;
+}
+
+.aboutme-text h2 {
+  font-size: var(--h2-font);
+}
+
+.aboutme-text p {
+  color: var(--secondary-color);
+  font-size: var(--p-font);
+  line-height: 25px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.aboutme-features {
+  display: none;
+  grid-template-columns: repeat(2.1fr);
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.aboutme-features h5 {
+  font-size: var(--h5-font);
+  font-weight: 600;
+}
+.aboutme-img img {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+}
+
+.main-text {
+  text-align: center;
+}
+
+.main-text h2 {
+  font-size: var(--h2-font);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main-text h4 {
+  font-size: var(--h4-font);
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.services-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.box {
+  background: #12141c;
+  padding: 40px;
+  border-top: 5px solid transparent;
+  border-radius: 0.8rem;
+}
+
+.box h3 {
+  margin-top: 0.5rem;
+  color: var(--text-color);
+  font-size: var(--h3-font);
+}
+
+.box p {
+  color: var(--secondary-color);
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+.box:hover {
+  border-top: 5px solid var(--primary-color);
+  transition: all 0.4s ease;
+}
+
+.box:hover h3 {
+  color: var(--primary-color);
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-form {
+  display: flex;
 }
